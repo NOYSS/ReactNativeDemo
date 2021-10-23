@@ -3,6 +3,8 @@ import { Router, Stack, Scene, Actions, ActionConst } from 'react-native-router-
 
 import LoginScreen from '../screens/LoginScreen';
 import HomeScreen from '../screens/HomeScreen';
+import ScanQRCodeScreen from '../screens/ScanQRCodeScreen';
+import ScanBarcodeScreen from '../screens/ScanBarcodeScreen';
 
 
 export default class Routing extends Component {
@@ -21,6 +23,8 @@ export default class Routing extends Component {
                 <Stack key="root" hideNavBar={true}>
                     <Scene key='loginScreen' component={LoginScreen} title='Login' initial={true} />
                     <Scene key='homeScreen' component={HomeScreen} title='Home' />
+                    <Scene key='scanQRCodeScreen' component={ScanQRCodeScreen} title='ScanQRCode' />
+                    <Scene key='scanBarcodeScreen' component={ScanBarcodeScreen} title='ScanBarcode' />
                 </Stack>
             </Router>
         );

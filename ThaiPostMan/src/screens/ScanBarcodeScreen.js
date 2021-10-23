@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image, Text, View, Button, Dimensions } from 'react-native';
-import { Actions } from 'react-native-router-flux';
-import Icon from 'react-native-vector-icons/FontAwesome'; // -- react-native link react-native-vector-icons
 
 import Header from '../components/Header';
 import MenuFooter from '../components/MenuFooter';
 
 let { width, height } = Dimensions.get('screen');
 
-export default class HomeScreen extends Component {
-
-
-
+export default class ScanBarcodeScreen extends Component {
     render() {
 
         return (
@@ -22,7 +17,7 @@ export default class HomeScreen extends Component {
                     <View style={styles.positionLogo}>
                         <Image source={require("../assets/images/postman/postman_hello_w100.png")} />
                         <Text>
-                            Welcome to Home!
+                            Welcome to Scan Barcode!
                         </Text>
                     </View>
                 </View>

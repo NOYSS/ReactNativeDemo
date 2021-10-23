@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet, Button, TextInput, Dimensions } from 'react-native';
+import { View, Image, Text, StyleSheet, Button, TextInput, Dimensions } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
 import Header from '../components/Header';
@@ -16,21 +16,25 @@ export default class LoginScreen extends Component {
                     justifyContent: 'center',
                     alignItems: 'center',
                 }} headerImageSize={{ width: width * 0.6 }} />
+
                 <View style={{ flex: 12 }} >
-                <View style={{ marginTop: 60 }} >
-                    <TextInput
-                        style={styles.input}
 
-                    />
-                     <TextInput
-                        style={styles.input}
+                    <View style={{ marginTop: 0 }} >
+                        <TextInput
+                            style={styles.input}
 
-                    />
+                        />
+                        <TextInput
+                            style={styles.input}
+
+                        />
                     </View>
-                    <View style={styles.fixToText}>
+                    <View style={styles.positionBtn}>
                         <Button onPress={() => Actions.homeScreen()} title="     Login     " />
                     </View>
+
                 </View>
+
             </View>
         );
     }
@@ -47,9 +51,10 @@ const styles = StyleSheet.create({
         color: 'blue',
         fontSize: 40
     },
-    fixToText: {
+    positionBtn: {
         margin: 16,
         justifyContent: 'center',
+        alignItems: 'center',
     },
     input: {
         height: 40,

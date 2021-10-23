@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>ReactNativeProject</name>
+	<name>ThaiPostMan</name>
 	<comment>Project android created by Buildship.</comment>
 	<projects>
 	</projects>
@@ -16,7 +16,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1634703936065</id>
+			<id>1634977870304</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
